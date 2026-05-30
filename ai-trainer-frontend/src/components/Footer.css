@@ -1,0 +1,137 @@
+.site-footer {
+  background: var(--bg);
+  color: var(--text-primary);
+  padding: 50px 20px 20px;
+  font-family: 'DM Sans', sans-serif;
+  border-top: 1px solid var(--border);
+}
+
+/* ================= CONTAINER ================= */
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ================= HEADINGS ================= */
+.footer-col h3,
+.footer-col h4 {
+  color: var(--primary);
+  margin-bottom: 15px;
+  position: relative;
+  font-family: 'Playfair Display', serif;
+}
+
+/* underline */
+.footer-col h3::after,
+.footer-col h4::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 40px;
+  height: 2px;
+  background: var(--accent);
+  border-radius: 2px;
+  box-shadow: 0 0 8px var(--accent-dim);
+}
+
+/* ================= TEXT ================= */
+.footer-col p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* ================= LINKS ================= */
+.footer-col ul li a {
+  color: var(--text-primary);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+/* hover */
+.footer-col ul li a:hover {
+  color: var(--accent);
+  transform: translateX(5px);
+}
+
+/* ================= SOCIAL ICONS ================= */
+.social-icons a {
+  color: var(--primary);
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  padding: 6px;   /* 👈 clickable area better */
+  border-radius: 6px;
+}
+
+.social-icons a:hover {
+  color: var(--accent);
+  transform: scale(1.1);
+  background: var(--accent-dim); /* 👈 soft hover background */
+}
+
+/* ================= NEWSLETTER ================= */
+.newsletter input {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  flex: 1;
+  outline: none;
+  background: var(--bg-card);
+  color: var(--text-primary);
+}
+
+/* focus */
+.newsletter input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 10px var(--accent-dim);
+}
+
+/* button */
+.newsletter button {
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: none;
+  background: var(--primary);
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* hover */
+.newsletter button:hover {
+  background: #2d2d4e;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px var(--accent-dim);
+}
+
+/* ================= FOOTER BOTTOM ================= */
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .newsletter {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .newsletter button {
+    width: 100%;
+  }
+}

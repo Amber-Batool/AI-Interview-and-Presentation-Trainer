@@ -1,0 +1,100 @@
+/* ChatMessage.css */
+
+/* Container for the whole chat component */
+.chat-container {
+  max-width: 500px;
+  margin: 2rem auto;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 1rem;
+}
+
+/* Messages list container */
+.messages-list {
+  flex: 1;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Individual chat message */
+.chat-msg {
+  background-color: #e0f0ff;
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  word-wrap: break-word;
+  font-size: 0.95rem;
+}
+
+/* Input container */
+.chat-input {
+  display: flex;
+  gap: 0.5rem;
+}
+
+/* Input box */
+.chat-input input {
+  flex: 1;
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+.chat-input input:focus {
+  border-color: #3b82f6; /* Blue focus */
+  box-shadow: 0 0 0 2px rgba(59,130,246,0.2);
+}
+
+/* Send button */
+.chat-input button {
+  background-color: #3b82f6;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.chat-input button:hover {
+  background-color: #2563eb;
+}
+
+/* Scrollbar styling (optional) */
+.messages-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.messages-list::-webkit-scrollbar-thumb {
+  background-color: rgba(59, 130, 246, 0.5);
+  border-radius: 3px;
+}
+
+.messages-list::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+/* Responsive for mobile */
+@media (max-width: 600px) {
+  .chat-container {
+    width: 90%;
+    height: 400px;
+  }
+
+  .chat-msg {
+    font-size: 0.9rem;
+  }
+
+  .chat-input input {
+    font-size: 0.9rem;
+  }
+}
