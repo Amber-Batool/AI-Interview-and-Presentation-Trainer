@@ -4,6 +4,7 @@
 The AI Interview and Presentation Trainer is a web-based intelligent system designed to help students and professionals improve their interview skills and presentation performance. It uses Artificial Intelligence, Natural Language Processing, and Speech Recognition to provide real-time feedback and personalized training.
 
 🎯 Features
+
 🎤 AI-powered interview question generation
 🧠 Smart feedback on answers
 🗣️ Speech recognition for voice input
@@ -20,6 +21,7 @@ Version Control: Git & GitHub
 
 📂 Project Structure
 AI-Interview-and-Presentation-Trainer/
+
 │
 ├── ai-trainer-frontend/
 ├── ai-trainer-backend/
@@ -27,6 +29,7 @@ AI-Interview-and-Presentation-Trainer/
 └── README.md
 
 🚀 How to Run Project
+
 1. Clone Repository
 git clone https://github.com/Amber-Batool/AI-Interview-and-Presentation-Trainer.git
 2. Frontend Setup
